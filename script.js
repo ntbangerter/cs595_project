@@ -41,8 +41,6 @@ function paid() {
 }
 
 async function ln_payment() {
-    // alert("You selected Option 1");
-
     ln_tn = getCookie("ln_tn")
 
     if (ln_tn !== null) {
