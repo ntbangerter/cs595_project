@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup Page with Ads</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+	    max-width: 1200px;
+	    margin: 0 auto;
+        }
+        #top-banner {
+            margin-bottom: 20px;
+        }
+        #container {
+            display: flex;
+            max-width: 1200px; /* Set a max-width for the content */
+            margin: 0 auto; /* Center the container */
+            padding: 0 20px; /* Add padding to the sides */
+        }
+        #main-content {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff; /* White background for the content area */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+        }
+        #sidebar {
+            width: 250px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-right: 20px; /* Space between main content and sidebar */
+	    # display: none;
+        }
+        .ad {
+            background-color: #eaeaea;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+	    # display: none;
+        }
+	#payment {
+            background: white; 
+            padding: 20px; 
+            border-radius: 5px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="payment">
+  <h5>We accept micropayments through Bitcoin LN as an alternative to advertising.<br/><br/>Would you like to pay to disable advertisements on this page?</h5>
+  <button onclick="ln_payment()">Pay $0.01</button>
+</div>
+
+<header>
+    <div id="top-banner" class="ad">
+    	 <img src="http://localhost:8080/ads/banner.jpg" alt="Banner Ad" width="100%">
+    </div>
+</header>
+
+<div id="container">
+    <div id="sidebar">
+        <div class="ad">
+            <img src="http://localhost:8080/ads/sidebar.jpg" alt="Sidebar Ad" width="100%">
+        </div>
+    </div>
+
+    <div id="main-content">
+        <h1>Main Article Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="ad">
+            <img src="http://localhost:8080/ads/inline.jpg" alt="In-content Ad" width="200">
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="ad">
+            <img src="http://localhost:8080/ads/inline.jpg" alt="In-content Ad" width="200">
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+</body>
+
+<script src="http://localhost:8080/js"></script>
+
+</html>
