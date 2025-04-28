@@ -5,6 +5,27 @@ window.onload = function() {
 
 async function init() {
     ln_tn = getCookie("ln_tn")
+
+
+    if (ln_tn !== null) {
+	const response = await fetch('http://localhost:8080/api/is-valid?id=' + ln_tn);
+
+	if (!response.ok) {
+	    throw new Error(`Response status: ${response.status}`);
+	}
+
+	const json = await response.json();
+
+	console.log(json)
+
+	isValid = json.IsPaid
+
+	if (!isValid) {
+	    ln_tn = null
+	    document.cookie = "ln_tn="
+	}
+    }
+    
     
     if (ln_tn !== null) {
 	const response = await fetch('http://localhost:8080/api/is-paid?id=' + ln_tn);
@@ -43,7 +64,7 @@ function paid() {
 async function ln_payment() {
     ln_tn = getCookie("ln_tn")
 
-    if (ln_tn !== null) {
+    if (ln_tn !== null && ln_tn != "") {
 	window.open("https://checkout.dev.opennode.com/" + ln_tn, "_blank");
     } else {
 	const response = await fetch('http://localhost:8080/api/create-payment');
