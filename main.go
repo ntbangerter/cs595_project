@@ -13,37 +13,6 @@ import (
 
 
 const OPENNODE_API_KEY = "ADD_API_KEY_HERE"
-const PORT = ":8080"
-
-
-func run_server() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "index.html")
-	})
-
-	http.HandleFunc("/js", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "script.js")
-	})
-
-	http.HandleFunc("/ads/banner.jpg", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "ads/banner.jpg")
-	})
-	http.HandleFunc("/ads/inline.jpg", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "ads/inline.jpg")
-	})
-	http.HandleFunc("/ads/sidebar.jpg", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "ads/sidebar.jpg")
-	})
-
-	http.HandleFunc("/api/create-payment", handleCreatePayment)
-	http.HandleFunc("/api/is-paid", handleIsPaid)
-
-	// Start the server
-	log.Printf("Starting server on http://localhost%s\n", PORT)
-	if err := http.ListenAndServe(PORT, nil); err != nil {
-		log.Fatalf("ListenAndServe: %v", err)
-	}
-}
 
 
 func extractValue(body string, key string) string {
@@ -114,23 +83,9 @@ func createPayment() string {
 	return response.Data.ID
 }
 
+
 type CreatePaymentResponse struct {
 	ID string
-}
-
-
-func handleCreatePayment(w http.ResponseWriter, r *http.Request) {
-	log.Println("handleCreatePayment called")
-	
-	id := createPayment()
-
-	w.Header().Set("Content-Type", "application/json")
-
-	response := CreatePaymentResponse{
-		ID: id,
-	}
-
-	json.NewEncoder(w).Encode(response)
 }
 
 
@@ -199,21 +154,7 @@ type IsPaidResponse struct {
 }
 
 
-func handleIsPaid(w http.ResponseWriter, r *http.Request) {
-	id := r.URL.Query().Get("id")
-
-	log.Printf("handleIsPaid called, ID: %s", id)
-
-	w.Header().Set("Content-Type", "application/json")
-
-	response := IsPaidResponse{
-		IsPaid: isPaid(id),
-	}
-
-	json.NewEncoder(w).Encode(response)
-}
-
-
 func main() {
-	run_server()
+	server := initializeServer()
+	server.runServer()
 }
