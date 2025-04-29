@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LN Routing Demo</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    input, select, button { margin: 0.5em 0; padding: 0.4em; width: 400px; }
+    #results { margin-top: 2em; }
+    .path-box { margin-bottom: 1em; padding: 1em; border: 1px solid #ccc; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>⚡ Lightning Network Routing Demo</h1>
+
+  <label>Start Node ID:</label><br>
+  <input type="text" id="start" value="03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134"><br>
+
+  <label>End Node ID:</label><br>
+  <input type="text" id="end" value="03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"><br>
+
+  <label>Optimize By:</label><br>
+  <select id="optimize">
+    <option value="fee">Total Fee</option>
+    <option value="hop">Hop Count</option>
+    <option value="timelock">Timelock Delay</option>
+  </select><br>
+
+  <button onclick="findPaths()">Find Routes</button>
+
+  <div id="results"></div>
+
+  <script>
+    async function findPaths() {
+      const start = document.getElementById("start").value.trim();
+      const end = document.getElementById("end").value.trim();
+      const optimize = document.getElementById("optimize").value;
+
+      if (!start || !end) {
+        alert("Please enter both start and end node IDs.");
+        return;
+      }
+
+      const response = await fetch('/find_paths', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ start, end, optimize })
+      });
+
+      const container = document.getElementById("results");
+      container.innerHTML = "";
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        container.innerHTML = `<p style="color:red;">Error: ${errorData.error}</p>`;
+        return;
+      }
+
+      const data = await response.json();
+
+      if (data.length === 0) {
+        container.innerHTML = "<p>No paths found.</p>";
+        return;
+      }
+
+      container.innerHTML = `<h2>Top ${data.length} Paths (optimized by ${optimize})</h2>`;
+      data.forEach((pathInfo, idx) => {
+        const html = `
+          <div class="path-box">
+            <strong>Path ${idx + 1}</strong><br>
+            ➤ ${pathInfo.path.join(" ➝ ")}<br>
+            Fee: <b>${pathInfo.total_fee_msat}</b> msat<br>
+            Hops: <b>${pathInfo.hops}</b><br>
+            Timelock: <b>${pathInfo.total_timelock}</b><br>
+            Min Capacity: <b>${pathInfo.min_capacity_sat}</b> sat
+          </div>
+        `;
+        container.innerHTML += html;
+      });
+    }
+  </script>
+</body>
+</html>
