@@ -1,0 +1,152 @@
+[
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
+      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d",
+      "03a1fb20bdea9a560f32a96279fe6650f977c2584819edf12115f7f42bb95526b7",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 6,
+    "total_fee_msat": 2381,
+    "min_capacity_sat": 200000,
+    "total_timelock": 420
+  }
+]
