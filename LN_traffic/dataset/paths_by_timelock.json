@@ -3,150 +3,120 @@
     "path": [
       "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
       "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
-      "038863cf8ab91046230f561cd5b386cbff8309fa02e3f0c3ed161a3aeb64a643b9",
-      "023d07a5d8f6ac4d736146797f07c0dd7f597e4e7f0dd8f39460f8190a5f0e6647",
-      "036497fee1a0b963a63f0b4374819d9016fcca9c09dbef4cb427a2d0146649b025",
-      "032ab2028c0b614c6d87824e2373529652fd7e4221b4c70cc4da7c7005c49afcf0",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
     ],
-    "hops": 6,
-    "total_fee_msat": 3662,
-    "min_capacity_sat": 100000,
-    "total_timelock": 524
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
   },
   {
     "path": [
       "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
       "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
-      "036295d8eda97c412586d3d335fcc8caf4e98b8de57106e2510ee39b9d16804283",
-      "036497fee1a0b963a63f0b4374819d9016fcca9c09dbef4cb427a2d0146649b025",
-      "032ab2028c0b614c6d87824e2373529652fd7e4221b4c70cc4da7c7005c49afcf0",
-      "02312627fdf07fbdd7e5ddb136611bdde9b00d26821d14d94891395452f67af248",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
     ],
-    "hops": 6,
-    "total_fee_msat": 4013,
-    "min_capacity_sat": 100000,
-    "total_timelock": 524
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
   },
   {
     "path": [
       "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
       "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
-      "036295d8eda97c412586d3d335fcc8caf4e98b8de57106e2510ee39b9d16804283",
-      "036497fee1a0b963a63f0b4374819d9016fcca9c09dbef4cb427a2d0146649b025",
-      "025a7e38c2834dd843591a4d23d5f09cdeb77ddca85f673c2d944a14220ff14cf7",
-      "02312627fdf07fbdd7e5ddb136611bdde9b00d26821d14d94891395452f67af248",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
     ],
-    "hops": 6,
-    "total_fee_msat": 4013,
-    "min_capacity_sat": 100000,
-    "total_timelock": 524
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
   },
   {
     "path": [
       "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
       "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
-      "036295d8eda97c412586d3d335fcc8caf4e98b8de57106e2510ee39b9d16804283",
-      "036497fee1a0b963a63f0b4374819d9016fcca9c09dbef4cb427a2d0146649b025",
-      "025a7e38c2834dd843591a4d23d5f09cdeb77ddca85f673c2d944a14220ff14cf7",
-      "03f060953bef5b777dc77e44afa3859d022fc1a77c55138deb232ad7255e869c00",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
     ],
-    "hops": 6,
-    "total_fee_msat": 4013,
-    "min_capacity_sat": 100000,
-    "total_timelock": 524
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
   },
   {
     "path": [
       "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
-      "03e84a109cd70e57864274932fc87c5e6434c59ebb8e6e7d28532219ba38f7f6df",
-      "036295d8eda97c412586d3d335fcc8caf4e98b8de57106e2510ee39b9d16804283",
-      "036497fee1a0b963a63f0b4374819d9016fcca9c09dbef4cb427a2d0146649b025",
-      "02eadbd9e7557375161df8b646776a547c5cbc2e95b3071ec81553f8ec2cea3b8c",
-      "025a7e38c2834dd843591a4d23d5f09cdeb77ddca85f673c2d944a14220ff14cf7",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
-    ],
-    "hops": 6,
-    "total_fee_msat": 4014,
-    "min_capacity_sat": 100000,
-    "total_timelock": 558
-  },
-  {
-    "path": [
-      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
-      "03e84a109cd70e57864274932fc87c5e6434c59ebb8e6e7d28532219ba38f7f6df",
-      "036295d8eda97c412586d3d335fcc8caf4e98b8de57106e2510ee39b9d16804283",
-      "036497fee1a0b963a63f0b4374819d9016fcca9c09dbef4cb427a2d0146649b025",
-      "02eadbd9e7557375161df8b646776a547c5cbc2e95b3071ec81553f8ec2cea3b8c",
-      "032ab2028c0b614c6d87824e2373529652fd7e4221b4c70cc4da7c7005c49afcf0",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
-    ],
-    "hops": 6,
-    "total_fee_msat": 4014,
-    "min_capacity_sat": 100000,
-    "total_timelock": 558
-  },
-  {
-    "path": [
-      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
-      "03e84a109cd70e57864274932fc87c5e6434c59ebb8e6e7d28532219ba38f7f6df",
-      "0265f43d15e302f2a278bee0495571c005a5ac2d90ef1291555c42bc54d15e367a",
-      "023d07a5d8f6ac4d736146797f07c0dd7f597e4e7f0dd8f39460f8190a5f0e6647",
       "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
-      "022ab9b30e06b5ac3aa02cf19065ed8dbc2a4557e1c33ab5f88a45ffce8bdbb0e9",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
     ],
-    "hops": 6,
-    "total_fee_msat": 3853,
-    "min_capacity_sat": 200000,
-    "total_timelock": 598
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
   },
   {
     "path": [
       "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
-      "03e84a109cd70e57864274932fc87c5e6434c59ebb8e6e7d28532219ba38f7f6df",
-      "036295d8eda97c412586d3d335fcc8caf4e98b8de57106e2510ee39b9d16804283",
-      "036497fee1a0b963a63f0b4374819d9016fcca9c09dbef4cb427a2d0146649b025",
-      "032ab2028c0b614c6d87824e2373529652fd7e4221b4c70cc4da7c7005c49afcf0",
-      "02312627fdf07fbdd7e5ddb136611bdde9b00d26821d14d94891395452f67af248",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
     ],
-    "hops": 6,
-    "total_fee_msat": 4014,
-    "min_capacity_sat": 100000,
-    "total_timelock": 598
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
   },
   {
     "path": [
       "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
-      "03e84a109cd70e57864274932fc87c5e6434c59ebb8e6e7d28532219ba38f7f6df",
-      "036295d8eda97c412586d3d335fcc8caf4e98b8de57106e2510ee39b9d16804283",
-      "036497fee1a0b963a63f0b4374819d9016fcca9c09dbef4cb427a2d0146649b025",
-      "025a7e38c2834dd843591a4d23d5f09cdeb77ddca85f673c2d944a14220ff14cf7",
-      "02312627fdf07fbdd7e5ddb136611bdde9b00d26821d14d94891395452f67af248",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
     ],
-    "hops": 6,
-    "total_fee_msat": 4014,
-    "min_capacity_sat": 100000,
-    "total_timelock": 598
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
   },
   {
     "path": [
       "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
-      "03e84a109cd70e57864274932fc87c5e6434c59ebb8e6e7d28532219ba38f7f6df",
-      "036295d8eda97c412586d3d335fcc8caf4e98b8de57106e2510ee39b9d16804283",
-      "036497fee1a0b963a63f0b4374819d9016fcca9c09dbef4cb427a2d0146649b025",
-      "025a7e38c2834dd843591a4d23d5f09cdeb77ddca85f673c2d944a14220ff14cf7",
-      "03f060953bef5b777dc77e44afa3859d022fc1a77c55138deb232ad7255e869c00",
-      "03d2fc638243a9bdaf4a4244510c73e5af874e6fcf99deb3d532019ba3e3f57e4d"
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
     ],
-    "hops": 6,
-    "total_fee_msat": 4014,
-    "min_capacity_sat": 100000,
-    "total_timelock": 598
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
+  },
+  {
+    "path": [
+      "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134",
+      "03781444afe27babf724304c25370f195d9d955065d7894539ed7db5fe596badb8",
+      "0225bbc2a7341993cd592d7b0c185bb8c6359cc1dd1337975c6d41354e4703bf64",
+      "03ec72b4fa2664e0c51c7d303b61e88b3c070744f0c6e21b08653c5b8347cd4961"
+    ],
+    "hops": 3,
+    "total_fee_msat": 2629,
+    "min_capacity_sat": 5000000,
+    "total_timelock": 156
   }
 ]
