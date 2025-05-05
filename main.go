@@ -12,7 +12,7 @@ import (
 )
 
 
-const OPENNODE_API_KEY = "ADD_API_KEY_HERE"
+const OPENNODE_API_KEY = "ADD OPENNODE API KEY"
 
 
 func extractValue(body string, key string) string {
@@ -61,8 +61,7 @@ func createPayment() string {
 
 	url := "https://dev-api.opennode.com/v1/charges"
 	
-	requestBody := []byte(`{"amount": "0.01", "currency": "USD"
-}`)
+	requestBody := []byte(`{"amount": "0.01", "currency": "USD"}`)
 
 	req, _ := http.NewRequest("POST", url, bytes.NewBuffer(requestBody))
 

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM API Wrapper Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .api-block {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result1, #result2 {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 18px; /* Adjust the size as needed */
+        }
+        .payment-buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .payment-buttons button {
+            margin-left: 10px; /* Space between buttons */
+        }
+        .flex-container {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <script>
+        async function callApi(endpointId) {
+            const id = document.getElementById('idInput' + endpointId).value;
+            const message = document.getElementById('messageInput' + endpointId).value;
+
+            const response = await fetch('http://localhost:8080/api/call-llm' + endpointId, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'ID': id
+                },
+                body: JSON.stringify({ message: message })
+            });
+
+            const result = document.getElementById('result' + endpointId);
+            if (response.ok) {
+                const text = await response.text();
+                result.textContent = `${text}`;
+            } else {
+                result.textContent = `Error: ${response.statusText}`;
+            }
+        }
+
+        async function createPayment(endpointId) {
+            const response = await fetch('http://localhost:8080/api/create-payment');
+            if (!response.ok) {
+                throw new Error(`Response status: ${response.status}`);
+            }
+
+            const json = await response.json();
+            const idInput = document.getElementById('idInput' + endpointId);
+            idInput.value = json.ID; // Populate the ID field with the returned ID
+            console.log(json);
+        }
+
+        function openCheckout(endpointId) {
+            const idInput = document.getElementById('idInput' + endpointId).value;
+            window.open("https://checkout.dev.opennode.com/" + idInput, "_blank");
+        }
+    </script>
+</head>
+<body>
+    <h1>LLM API Wrapper Demo</h1>
+
+    <div class="api-block">
+        <h2>OpenAI API Wrapper - https://api.openai.com/</h2>
+        <label for="idInput1">ID:</label>
+        <div class="flex-container">
+            <input type="text" id="idInput1" required>
+            <div class="payment-buttons">
+                <button onclick="createPayment(1)">Create Payment</button>
+                <button onclick="openCheckout(1)">Open Checkout</button>
+            </div>
+        </div>
+
+        <label for="messageInput1">Message:</label>
+        <textarea id="messageInput1" rows="6" required></textarea>
+
+        <button onclick="callApi(1)">Send Request</button>
+        <p id="result1"></p>
+    </div>
+
+    <!-- <div class="api-block"> -->
+    <!--     <h2>vLLM API Wrapper - http://192.168.0.8:8000/</h2> -->
+    <!--     <label for="idInput2">ID:</label> -->
+    <!--     <div class="flex-container"> -->
+    <!--         <input type="text" id="idInput2" required> -->
+    <!--         <div class="payment-buttons"> -->
+    <!--             <button onclick="createPayment(2)">Create Payment</button> -->
+    <!--             <button onclick="openCheckout(2)">Open Checkout</button> -->
+    <!--         </div> -->
+    <!--     </div> -->
+
+    <!--     <label for="messageInput2">Message:</label> -->
+    <!--     <textarea id="messageInput2" rows="6" required></textarea> -->
+
+    <!--     <button onclick="callApi(2)">Send Request</button> -->
+    <!--     <p id="result2"></p> -->
+    <!-- </div> -->
+</body>
+</html>
